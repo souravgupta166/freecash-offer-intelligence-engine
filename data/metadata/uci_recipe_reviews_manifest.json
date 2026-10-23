@@ -1,0 +1,31 @@
+{
+  "dataset_name": "Recipe Reviews and User Feedback",
+  "source_type": "UCI research dataset",
+  "source_url": "https://archive.ics.uci.edu/dataset/911/recipe+reviews+and+user+feedback+dataset",
+  "doi": "10.24432/C5FG95",
+  "license": "CC BY 4.0",
+  "attribution": "Ali, A., Matuszewski, S., & Czupyt, J. (2023). Recipe Reviews and User Feedback [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5FG95",
+  "retrieved_at_utc": "2026-10-23T12:53:27.404554+00:00",
+  "project_role": "NLP development and testing only",
+  "is_freecash_data": false,
+  "is_trustpilot_data": false,
+  "source_rows": 18182,
+  "rows_with_nonempty_text": 18180,
+  "rows_after_validation_and_deduplication": 18147,
+  "duplicate_rows_removed": 30,
+  "selected_columns": [
+    "text",
+    "stars",
+    "created_at",
+    "thumbs_up",
+    "thumbs_down",
+    "reply_count"
+  ],
+  "excluded_personal_identifiers": [
+    "user_id",
+    "user_name",
+    "comment_id"
+  ],
+  "raw_selected_file": "data\\raw\\reviews\\uci_recipe_reviews_selected.csv",
+  "processed_file": "data\\processed\\uci_recipe_reviews_development.csv"
+}

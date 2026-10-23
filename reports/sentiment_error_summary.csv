@@ -1,0 +1,10 @@
+actual,predicted,count
+negative,negative,65
+negative,neutral,14
+negative,positive,23
+neutral,negative,23
+neutral,neutral,46
+neutral,positive,29
+positive,negative,60
+positive,neutral,96
+positive,positive,2935

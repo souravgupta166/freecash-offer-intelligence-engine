@@ -1,0 +1,147 @@
+{
+  "experiment": "TF-IDF + Logistic Regression baseline",
+  "dataset": "UCI Recipe Reviews and User Feedback",
+  "source_url": "https://archive.ics.uci.edu/dataset/911/recipe+reviews+and+user+feedback+dataset",
+  "dataset_is_freecash_data": false,
+  "dataset_is_trustpilot_data": false,
+  "label_definition": {
+    "negative": "1\u20132 stars",
+    "neutral": "3 stars",
+    "positive": "4\u20135 stars",
+    "zero_star_reviews": "excluded because they are unrated",
+    "caveat": "Ratings are proxy labels, not human-annotated text sentiment."
+  },
+  "created_at_utc": "2026-10-23T13:01:46.940215+00:00",
+  "random_state": 42,
+  "test_size": 0.2,
+  "train_rows": 13163,
+  "test_rows": 3291,
+  "training_class_counts": {
+    "positive": 12362,
+    "negative": 410,
+    "neutral": 391
+  },
+  "test_class_counts": {
+    "positive": 3091,
+    "negative": 102,
+    "neutral": 98
+  },
+  "baseline": {
+    "accuracy": 0.9392281981160742,
+    "balanced_accuracy": 0.3333333333333333,
+    "macro_f1": 0.32288728716180926,
+    "weighted_f1": 0.9097945347467205,
+    "classification_report": {
+      "negative": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 102.0
+      },
+      "neutral": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 98.0
+      },
+      "positive": {
+        "precision": 0.9392281981160742,
+        "recall": 1.0,
+        "f1-score": 0.9686618614854278,
+        "support": 3091.0
+      },
+      "accuracy": 0.9392281981160742,
+      "macro avg": {
+        "precision": 0.31307606603869137,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.32288728716180926,
+        "support": 3291.0
+      },
+      "weighted avg": {
+        "precision": 0.8821496081363676,
+        "recall": 0.9392281981160742,
+        "f1-score": 0.9097945347467205,
+        "support": 3291.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        102
+      ],
+      [
+        0,
+        0,
+        98
+      ],
+      [
+        0,
+        0,
+        3091
+      ]
+    ]
+  },
+  "tfidf_logistic_regression": {
+    "accuracy": 0.9255545426921908,
+    "balanced_accuracy": 0.6853911844043128,
+    "macro_f1": 0.6159943136426801,
+    "weighted_f1": 0.9339886144792139,
+    "classification_report": {
+      "negative": {
+        "precision": 0.4391891891891892,
+        "recall": 0.6372549019607843,
+        "f1-score": 0.52,
+        "support": 102.0
+      },
+      "neutral": {
+        "precision": 0.2948717948717949,
+        "recall": 0.46938775510204084,
+        "f1-score": 0.36220472440944884,
+        "support": 98.0
+      },
+      "positive": {
+        "precision": 0.9825912286575159,
+        "recall": 0.9495308961501132,
+        "f1-score": 0.9657782165185916,
+        "support": 3091.0
+      },
+      "accuracy": 0.9255545426921908,
+      "macro avg": {
+        "precision": 0.5722174042395,
+        "recall": 0.6853911844043128,
+        "f1-score": 0.6159943136426801,
+        "support": 3291.0
+      },
+      "weighted avg": {
+        "precision": 0.9452701978046535,
+        "recall": 0.9255545426921908,
+        "f1-score": 0.9339886144792139,
+        "support": 3291.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        65,
+        14,
+        23
+      ],
+      [
+        23,
+        46,
+        29
+      ],
+      [
+        60,
+        96,
+        2935
+      ]
+    ]
+  },
+  "confusion_matrix_label_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "model_file": "models\\tfidf_logistic_regression.joblib"
+}

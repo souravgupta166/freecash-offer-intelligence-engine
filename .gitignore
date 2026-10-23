@@ -1,0 +1,36 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Raw source data
+data/raw/
+
+# Trained model artifacts (reproducible from training script)
+models/*.joblib
+models/*.pkl
+models/*.pickle

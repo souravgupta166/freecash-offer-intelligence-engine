@@ -1,0 +1,28 @@
+{
+  "dataset": "UCI Recipe Reviews and User Feedback",
+  "dataset_is_freecash_data": false,
+  "random_state": 42,
+  "test_size": 0.2,
+  "train_rows": 13163,
+  "test_rows": 3291,
+  "results": {
+    "majority_baseline": {
+      "accuracy": 0.9392281981160742,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1": 0.32288728716180926,
+      "weighted_f1": 0.9097945347467205
+    },
+    "unigrams_only": {
+      "accuracy": 0.883621999392282,
+      "balanced_accuracy": 0.6416679040860386,
+      "macro_f1": 0.5291020121285145,
+      "weighted_f1": 0.9075553842731849
+    },
+    "unigrams_and_bigrams": {
+      "accuracy": 0.9255545426921908,
+      "balanced_accuracy": 0.6853911844043128,
+      "macro_f1": 0.6159943136426801,
+      "weighted_f1": 0.9339886144792139
+    }
+  }
+}

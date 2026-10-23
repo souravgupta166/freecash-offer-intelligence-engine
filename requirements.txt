@@ -1,0 +1,13 @@
+pandas
+numpy
+beautifulsoup4
+playwright
+spacy
+scikit-learn
+streamlit
+plotly
+requests
+joblib
+pytest
+python-dotenv
+ucimlrepo

@@ -1,0 +1,106 @@
+{
+  "dataset": "UCI Recipe Reviews and User Feedback",
+  "dataset_is_freecash_data": false,
+  "label_type": "rating-derived proxy sentiment",
+  "random_state": 42,
+  "split_sizes": {
+    "train": 9872,
+    "validation": 3291,
+    "test": 3291
+  },
+  "validation_default_macro_f1": 0.5970642420642854,
+  "selected_thresholds": {
+    "negative": 0.45000000000000007,
+    "neutral": 0.40000000000000013
+  },
+  "validation_tuned_macro_f1": 0.596175829019126,
+  "test_default_argmax": {
+    "accuracy": 0.9349741719841993,
+    "balanced_accuracy": 0.673271250247672,
+    "macro_f1": 0.6262828137102492,
+    "weighted_f1": 0.9403620606598502,
+    "classification_report": {
+      "negative": {
+        "precision": 0.49264705882352944,
+        "recall": 0.6504854368932039,
+        "f1-score": 0.5606694560669456,
+        "support": 103.0
+      },
+      "neutral": {
+        "precision": 0.3007518796992481,
+        "recall": 0.40816326530612246,
+        "f1-score": 0.3463203463203463,
+        "support": 98.0
+      },
+      "positive": {
+        "precision": 0.9827928524156188,
+        "recall": 0.9611650485436893,
+        "f1-score": 0.9718586387434555,
+        "support": 3090.0
+      },
+      "accuracy": 0.9349741719841993,
+      "macro avg": {
+        "precision": 0.5920639303127988,
+        "recall": 0.673271250247672,
+        "f1-score": 0.6262828137102492,
+        "support": 3291.0
+      },
+      "weighted avg": {
+        "precision": 0.94714258439186,
+        "recall": 0.9349741719841993,
+        "f1-score": 0.9403620606598502,
+        "support": 3291.0
+      }
+    }
+  },
+  "test_tuned_thresholds": {
+    "accuracy": 0.9310240048617442,
+    "balanced_accuracy": 0.6657772494110913,
+    "macro_f1": 0.6258197481810744,
+    "weighted_f1": 0.9375207748161368,
+    "classification_report": {
+      "negative": {
+        "precision": 0.5565217391304348,
+        "recall": 0.6213592233009708,
+        "f1-score": 0.5871559633027523,
+        "support": 103.0
+      },
+      "neutral": {
+        "precision": 0.2611464968152866,
+        "recall": 0.41836734693877553,
+        "f1-score": 0.3215686274509804,
+        "support": 98.0
+      },
+      "positive": {
+        "precision": 0.9801258694932097,
+        "recall": 0.9576051779935275,
+        "f1-score": 0.9687346537894909,
+        "support": 3090.0
+      },
+      "accuracy": 0.9310240048617442,
+      "macro avg": {
+        "precision": 0.599264701812977,
+        "recall": 0.6657772494110913,
+        "f1-score": 0.6258197481810744,
+        "support": 3291.0
+      },
+      "weighted avg": {
+        "precision": 0.9454582292775299,
+        "recall": 0.9310240048617442,
+        "f1-score": 0.9375207748161368,
+        "support": 3291.0
+      }
+    }
+  },
+  "test_class_counts": {
+    "positive": 3090,
+    "negative": 103,
+    "neutral": 98
+  },
+  "notes": [
+    "Thresholds were selected using validation data only.",
+    "The test set was not used to select thresholds.",
+    "Threshold search is coarse and can overfit validation data.",
+    "Proxy labels are derived from ratings, not human annotations."
+  ]
+}
